@@ -1,0 +1,372 @@
+body{
+    background-color:black;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.navbar{
+  position: fixed;
+  left:0;
+  top:0;
+  width:1100px;
+  padding:25px 9% ;
+  background-color:gold;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100;
+   }
+
+.navbar .logo{
+ font-size:40px ;
+ font-weight:700px;
+}
+.navbar ul{
+ display: flex;
+}
+.navbar ul li{
+ list-style:none ;
+ margin-left:35px ;
+}
+.navbar ul li a{
+ font-size:20px;  
+ font-weight:500;
+ transition:2s;
+}
+.navbar ul li:hover a{
+ color:white;
+
+}
+.home{
+ display: flex;
+ align-items: center;
+ height: 100vh;
+ padding: 60px 9% 0;
+ color: white;
+}
+
+.home-info h1{
+ font-size: 50px;
+}
+.home_info h2{
+ display: inline-block;
+ font-size:30px;
+ margin-top: -10px;
+}
+
+.home_info h2 span{
+ position: relative;
+ display: inline-block;
+ color:transparent;
+ -webkit-text-stroke: .7px gold; 
+ animation: display-text 16s linear infinite;
+ animation-delay: calc(-4s * var(--i));
+}
+  
+@keyframes display-text{
+    25%,100%{
+        display:none;
+    }
+}
+
+
+.home_info h2 span::before{
+ content: attr(deta-text);
+ position: absolute;
+ width:0;
+ border-right: 2px solid gold;
+ color: gold;
+ white-space: nowrap;
+ overflow: hidden;
+ animation: fill-text 4s linear infinite;
+}
+
+@keyframes fill-text{
+
+ 10%,
+ 100%{
+      width: 0;
+ }
+ 70%,
+ 90%{
+  width: 100%;
+ }
+
+
+}
+
+.home_info p{
+ font-size: 15px;
+ margin:10px 0 25px;
+} 
+.home_info .btn-sci{
+ display: flex;
+ align-items: center;
+}
+.btn{
+ display:inline-block;
+ padding:10px 30px;
+ background-color:gold;
+ border:2px solid gold; 
+ border-radius: 40px;
+ box-shadow:0 0 10px gold;
+ font-size: 16px;
+ color: black;
+ font-weight:600px ;
+}
+.btn:hover{
+ background:transparent;
+ color:gold;
+ box-shadow: none;
+}
+.home_info .btn-sci .sci{
+  margin-left:20px;
+}
+.home_info .btn-sci .sci a{
+ display: inline-flex;
+ padding:8px;
+ border:2px solid gold;
+ border-radius:50%;
+ font-size: 20px;
+ color:gold;
+ margin: 0 8px;
+ transition: .5s;
+}
+ .home_info .btn-sci .sci a:hover{
+  background-color: beige;
+  color:black ;
+  box-shadow: 0 0 10px gold;
+ }
+
+.home-img .home-box .img-item img{
+ border-radius:100px;
+ margin-left:20px;
+ width:200px;
+ box-shadow:0 0 10px gold;
+}
+span{
+  color: gold;
+}
+
+/*About Section code*/
+
+.about{
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background: var(--snd-bg-color);
+
+}
+.heading-1{
+  color: azure;
+}
+ 
+.about-img img{
+   width: 15vw;
+   margin-right: 50px;
+   border-radius: 50%;
+   border: 3px solid gold;
+}
+  
+ .heading{
+  font-size: 2.3rem;
+  text-align: center;
+  color: azure;
+ }
+ .about-me{
+   font-size: 1rem;
+   color: azure;
+ }
+ .about-content{
+  padding: 0 4rem;
+ }
+ .about-content h2{
+   text-align: left;
+   line-height: 1.2;
+ }
+ 
+ .about-content p{
+   margin: 1.5rem 0 2rem;
+   font-size:20px;
+ }
+ /*projects code*/
+
+  .Projects{
+    margin-bottom:240px ;
+    background-color:gold;
+    font-size: larger;
+  }
+
+  .btnn{
+    background-color:gold;
+    color: black;
+    border-radius:20%;
+  }
+  
+ .projects-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 50px;
+ }
+
+ .projects-container .projects-box{
+   flex:1 1 1rem;
+   background: var(--snd-bg-color);
+   padding:0.5rem 0.2rem 0.5rem;
+   border-radius:2rem;
+   text-align: center;
+   border: 0.3rem solid var(--bg-color);
+   transition:0.3s ease ;
+   background-color: black;
+   color: azure;
+ }
+ .projects-container .projects-box:hover{
+   border-color: var(--main-color);
+   transform: scale(1.2);
+
+ }
+  
+ .projects-box h3{
+   font-size:40px;
+ }
+
+.heading{
+  color: black;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+ .projects-box{
+   margin-bottom: 50px;
+ }
+
+ .projects-box p{
+   font-size: 20px;
+   margin: 1rem  3rem;
+ }
+ 
+
+ /*About Skills code*/
+ .my-skills{
+   margin-bottom: 200px;
+ }
+.skills-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+}
+.skills-description{
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  color: azure;
+}
+.what-i-can{
+  display: flex;
+    justify-content: center;
+align-items: center;
+min-height: 200px;
+color: aliceblue;
+
+}
+.what-i-can .skills{
+  height: 100px;
+  width: 200px;
+  background-color: black;
+  margin: 30px;
+  text-align: center;
+   box-shadow: 0 0 10px gold;
+}
+.what-i-can .skills h3{
+  margin-top:3px ;
+  
+}
+.skills b{
+  font-size:40px ;
+}
+/*about-contact*/
+
+.container{
+  width: 800px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px gold;
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 40px;
+  color:gold;
+}
+form input,
+form textarea{
+  
+  width: 100%;
+  resize: none;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  font-size: 10px;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gold;
+  color: gold;
+  background-color: black;
+ }
+ 
+form button{
+   display: block;
+   padding: 10px;
+   border: none;
+   border-radius: 8px;
+   background-color: black;
+   color: gold;
+   transition: 0 3s ease;
+   width:20%;
+  margin-left:240px;
+  margin-top: 10px;
+}
+form button:hover{
+  background-color:white;
+}
+
+ /* last code*/
+.footer{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+}
+.footer>.head-footer>h1{
+    text-align: center;
+    color: gold;
+}
+.footer>.head-footer>p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.footer>.social>a{
+    animation: changeBakground 2s infinite 1s alternate;
+    color: white;
+    margin-inline: hidden;
+    transition: 2s ease;
+    padding: 0 10px;
+   }
+.footer>.social>a:hover{
+  color: gold;
+  box-shadow: 0 0 25px gold , gold 0 0 25px;
+}
+
+.footer>.social {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+
+}
